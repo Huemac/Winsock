@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{2e65af96-1bc7-43e7-b4f1-98a82cd518c2}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AddressInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ClientSocket.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Socket.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WsaInit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AddressInfo.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ClientSocket.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LogWrap.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Socket.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WsaInit.hpp" />
+  </ItemGroup>
+</Project>
